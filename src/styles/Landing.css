@@ -1,0 +1,53 @@
+body {
+  background-color: #083339;
+  font-family: "Sofia", sans-serif;
+}
+image {
+  /* width: 100px;
+  height: 100px; */
+  flex: 1;
+  text-align: right;
+  /* display: flex; */
+  justify-content: space-around;
+  align-self: flex-end;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image img {
+  max-width: 400px; /* Ensures the image scales responsively */
+  height: 400px;
+}
+.button {
+  background-color: #083339;
+  color: white;
+  /* padding: 10px 20px;
+  border-radius: 5px; */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin-top: 20px; */
+}
+.more {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center; /* Center the text inside the new div */
+  /* Additional styling for the new div */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
