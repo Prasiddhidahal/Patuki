@@ -1,0 +1,100 @@
+body {
+  background-color: #083339;
+  font-family: "Sofia", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.about-header {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-section {
+  background-color: #fff7ea;
+  color: #083339;
+  padding: 50px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.team-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.team-section p {
+  font-size: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-photo {
+  margin-top: 30px;
+}
+
+.team-photo img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #fff7ea;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-content div {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-content h2 {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  display: block;
+  color: #083339;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-content .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-content .social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
