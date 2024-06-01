@@ -1,0 +1,71 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.Browse-button {
+  background-color: #d3dfe1;
+  color: white;
+  /* padding: 10px 20px;
+    border-radius: 5px; */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin-top: 20px; */
+}
+a {
+  text-decoration: none;
+}
+.Shop {
+  margin-top: 100px;
+  margin-left: 10px;
+  width: 540;
+  height: auto;
+}
+.Shopp {
+  /* margin-top: 300px; */
+  margin-left: 10px;
+  width: 34.53%;
+  height: auto;
+}
+.image-container img {
+  margin-right: 10px; /* Add space to the right of each image */
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.image-wrapper {
+  margin-right: 33.3%; /* Adjust the space between images */
+}
+
+/* Optional: Remove margin from the last image to avoid extra space */
+.image-wrapper:last-child {
+  margin-right: 0;
+  margin-top: 5%;
+}
+
+/* Optional: Ensure images don't exceed their container */
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}

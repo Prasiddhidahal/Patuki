@@ -1,30 +1,29 @@
 // src/components/App.js
 import React from "react";
-import Landing from "./Landing.js"; // Correct path to Landing.js
-import Navbar from "./Navbar.js"; // Correct path to Navbar.js
-import About from "./About.js"; // Correct path to About.js
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Landing from "./Landing.js";
+// import Navbar from "./Navbar.js";
+import About from "./About.js";
+import Footer from "./Footter.js";
+import Shop from "./Shop.js";
+import Browse from "./Browse.js";
+
 import Contact from "./Contact.js";
 import "../styles/App.css";
-import Footer from "./Footter.js";
-const App = () => {
+// import Footer from "./Footter.js";
+function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Landing />} />{" "}
-        </Routes>
-        <Routes>
-          <Route path="/about" element={<About />} />{" "}
-        </Routes>
-        <Routes>
-          <Route path="/contact" element={<Contact />} />{" "}
-        </Routes>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/browse" element={<Browse />} />
+      </Routes>
+      <Footer />
     </Router>
   );
-};
+}
 
 export default App;

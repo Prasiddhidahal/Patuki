@@ -29,12 +29,12 @@ image {
 }
 
 .image img {
-  max-width: 400px; /* Ensures the image scales responsively */
-  height: 400px;
+  max-width: 597px; /* Ensures the image scales responsively */
+  height: 600px;
 }
-.button {
+.me-button {
   background-color: #083339;
-  color: white;
+  /* color: white; */
   /* padding: 10px 20px;
   border-radius: 5px; */
   border: none;
@@ -50,4 +50,7 @@ image {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
+}
+h1 {
+  margin-left: 10px;
 }

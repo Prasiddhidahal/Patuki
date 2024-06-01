@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import "../styles/Landing.css"; // Correct path to LandingPage.css
 import image from "../images/image.png";
-
+// import Footer from "../components/Footter";
+import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 const Landing = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -20,38 +22,30 @@ const Landing = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="landing-page">
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Sofia"
-      ></link>
-      <div className="text">
-        <h1>Discover Handmade Wonders:</h1>
-        <p>
-          Unleash the Artistry of Homemade Treasures: Explore Our Vibrant
-          Collection of Unique Products Crafted with Love and Passion
-        </p>
-        <div className="button">
-          <button>Shop Now</button>
+    <div>
+      <Navbar />
+      <div className="landing-page">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sofia"
+        ></link>
+        <div className="text">
+          <h1>Discover Handmade Wonders:</h1>
+          <p>
+            Unleash the Artistry of Homemade Treasures: Explore Our Vibrant
+            Collection of Unique Products Crafted with Love and Passion
+          </p>
+          <div>
+            <button className="me" type="button">
+              <Link to="/shop">Shop</Link>
+            </button>
+          </div>
+        </div>
+
+        <div className="image">
+          <img src={image} alt="handmade" />
         </div>
       </div>
-
-      <div className="image">
-        <img src={image} alt="handmade" />
-      </div>
-
-      {/* <div className="more">
-        <h1>
-          Embrace the Beauty of Homemade: Discover Artisanal Creations That
-          Celebrate the
-        </h1>
-        <div className="green-background">
-          <h1>Explore More Handmade Creations</h1>
-        </div>
-        <div className="slide-in">
-          <h1>New Arrivals Coming Soon</h1>
-        </div>
-      </div> */}
     </div>
   );
 };
