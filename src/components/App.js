@@ -6,15 +6,14 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import Shop from "./Shop.js";
 import Browse from "./Browse.js";
-import Footer from "./Footer.js";
-import Jokes from "./Jokes.js"; // Ensure this matches the actual file name
+import Footer from "./Footter.js";
+
 import "../styles/App.css";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/jokes" element={<Jokes />} />
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
