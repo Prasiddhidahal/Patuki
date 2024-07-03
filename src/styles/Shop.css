@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  color: #fff7ea;
 }
 
 .content {
@@ -15,19 +16,7 @@ body {
   margin-top: 100px;
   margin-left: 200px;
 }
-.Browse-button {
-  background-color: #d3dfe1;
-  color: white;
-  /* padding: 10px 20px;
-    border-radius: 5px; */
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  /* margin-top: 20px; */
-}
-a {
-  text-decoration: none;
-}
+
 .Shop {
   margin-top: 100px;
   margin-left: 10px;
@@ -68,4 +57,25 @@ a {
 .image-wrapper img {
   max-width: 100%;
   height: auto;
+}
+.Browse:hover {
+  background-color: #3c5c8c;
+}
+
+.Browse a {
+  text-decoration: none;
+  color: #fff;
+}
+.Browse {
+  background-color: #7c9ed0;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
